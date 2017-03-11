@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99C58F9F-43F3-4B8C-BAC1-EE168118BE93}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tunisia_Travel</RootNamespace>
+    <AssemblyName>Tunisia Travel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil.Master.cs">
+      <DependentUpon>Accueil.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accueil.Master.designer.cs">
+      <DependentUpon>Accueil.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AjouterOffre.aspx.cs">
+      <DependentUpon>AjouterOffre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AjouterOffre.aspx.designer.cs">
+      <DependentUpon>AjouterOffre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Administration.aspx.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Administration.aspx.designer.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionOffre.aspx.cs">
+      <DependentUpon>GestionOffre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionOffre.aspx.designer.cs">
+      <DependentUpon>GestionOffre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AjouterThematique.aspx.cs">
+      <DependentUpon>AjouterThematique.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AjouterThematique.aspx.designer.cs">
+      <DependentUpon>AjouterThematique.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GestionThematique.aspx.cs">
+      <DependentUpon>GestionThematique.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionThematique.aspx.designer.cs">
+      <DependentUpon>GestionThematique.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AnnulerPromotion.aspx.cs">
+      <DependentUpon>AnnulerPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AnnulerPromotion.aspx.designer.cs">
+      <DependentUpon>AnnulerPromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreerPromotion.aspx.cs">
+      <DependentUpon>CreerPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreerPromotion.aspx.designer.cs">
+      <DependentUpon>CreerPromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AttribuerPromotion.aspx.cs">
+      <DependentUpon>AttribuerPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AttribuerPromotion.aspx.designer.cs">
+      <DependentUpon>AttribuerPromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OffreFavories.aspx.cs">
+      <DependentUpon>OffreFavories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OffreFavories.aspx.designer.cs">
+      <DependentUpon>OffreFavories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.Master.cs">
+      <DependentUpon>Contact.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.Master.designer.cs">
+      <DependentUpon>Contact.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPromotion.Master.cs">
+      <DependentUpon>DetailPromotion.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailPromotion.Master.designer.cs">
+      <DependentUpon>DetailPromotion.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Inscription.Master.cs">
+      <DependentUpon>Inscription.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inscription.Master.designer.cs">
+      <DependentUpon>Inscription.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Offre.Master.cs">
+      <DependentUpon>Offre.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offre.Master.designer.cs">
+      <DependentUpon>Offre.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Promotions.Master.cs">
+      <DependentUpon>Promotions.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promotions.Master.designer.cs">
+      <DependentUpon>Promotions.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Accueil.aspx.cs">
+      <DependentUpon>Accueil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accueil.aspx.designer.cs">
+      <DependentUpon>Accueil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QuiSommesNous.Master.cs">
+      <DependentUpon>QuiSommesNous.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuiSommesNous.Master.designer.cs">
+      <DependentUpon>QuiSommesNous.Master</DependentUpon>
+    </Compile>
+    <Compile Include="QuiSommesNous.aspx.cs">
+      <DependentUpon>QuiSommesNous.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuiSommesNous.aspx.designer.cs">
+      <DependentUpon>QuiSommesNous.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inscription.aspx.cs">
+      <DependentUpon>Inscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inscription.aspx.designer.cs">
+      <DependentUpon>Inscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat.Master.cs">
+      <DependentUpon>Resultat.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat.Master.designer.cs">
+      <DependentUpon>Resultat.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SejoursTn.Master.cs">
+      <DependentUpon>SejoursTn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SejoursTn.Master.designer.cs">
+      <DependentUpon>SejoursTn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Profil.Master.cs">
+      <DependentUpon>Profil.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Profil.Master.designer.cs">
+      <DependentUpon>Profil.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Profil.aspx.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Profil.aspx.designer.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Offre.aspx.cs">
+      <DependentUpon>Offre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Offre.aspx.designer.cs">
+      <DependentUpon>Offre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SejoursTn.aspx.cs">
+      <DependentUpon>SejoursTn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SejoursTn.aspx.designer.cs">
+      <DependentUpon>SejoursTn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\OffresFavoris.aspx.cs">
+      <DependentUpon>OffresFavoris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\OffresFavoris.aspx.designer.cs">
+      <DependentUpon>OffresFavoris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\supprimer.aspx.cs">
+      <DependentUpon>supprimer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\supprimer.aspx.designer.cs">
+      <DependentUpon>supprimer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\AppliquerTheme.aspx.cs">
+      <DependentUpon>AppliquerTheme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\AppliquerTheme.aspx.designer.cs">
+      <DependentUpon>AppliquerTheme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voyages.Master.cs">
+      <DependentUpon>Voyages.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voyages.Master.designer.cs">
+      <DependentUpon>Voyages.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Voyages.aspx.cs">
+      <DependentUpon>Voyages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voyages.aspx.designer.cs">
+      <DependentUpon>Voyages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat.aspx.cs">
+      <DependentUpon>Resultat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat.aspx.designer.cs">
+      <DependentUpon>Resultat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promotions.aspx.cs">
+      <DependentUpon>Promotions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promotions.aspx.designer.cs">
+      <DependentUpon>Promotions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPromotion.aspx.cs">
+      <DependentUpon>DetailPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailPromotion.aspx.designer.cs">
+      <DependentUpon>DetailPromotion.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accueil.Master" />
+    <Content Include="App_Data\ASPNETDB.MDF">
+    </Content>
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="css\Style.css" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\2.jpg" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\accueil.png" />
+    <Content Include="img\apropos.png" />
+    <Content Include="img\back.jpg" />
+    <Content Include="img\back_liens.gif" />
+    <Content Include="img\contact.png" />
+    <Content Include="img\header.gif" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\offres.png" />
+    <Content Include="img\promotions.png" />
+    <Content Include="img\recherche.png" />
+    <Content Include="img\sejours.png" />
+    <Content Include="img\separateur.png" />
+    <Content Include="img\topOffre.png" />
+    <Content Include="img\voyages.png" />
+    <Content Include="js\jQuery.js" />
+    <Content Include="Accueil.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\contacteznous.png" />
+    <Content Include="img\quisommesnous.png" />
+    <Content Include="QuiSommesNous.Master" />
+    <Content Include="QuiSommesNous.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact.Master" />
+    <Content Include="Contact.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\inscription.png" />
+    <Content Include="img\modifiermdp.png" />
+    <Content Include="img\profil.png" />
+    <Content Include="Inscription.Master" />
+    <Content Include="Inscription.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\ImgOffres\croisiere.jpg" />
+    <Content Include="img\ImgOffres\sousse-plage.jpg" />
+    <Content Include="Users\Profil.Master" />
+    <Content Include="Users\Profil.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\detailsoffre.png" />
+    <Content Include="Offre.Master" />
+    <Content Include="Offre.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\sejoursentunisie.png" />
+    <Content Include="img\voyageetranger.png" />
+    <Content Include="SejoursTn.Master" />
+    <Content Include="SejoursTn.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\ImgOffres\istanbul.jpg" />
+    <Content Include="img\ImgOffres\istanbul2.jpg" />
+    <Content Include="img\ImgOffres\Japan.jpg" />
+    <Content Include="img\ImgOffres\maroc.jpg" />
+    <Content Include="Voyages.Master" />
+    <Content Include="Voyages.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\TunisiaTravelBD.mdf">
+    </Content>
+    <Content Include="App_Data\TunisiaTravelBD_log.ldf">
+      <DependentUpon>TunisiaTravelBD.mdf</DependentUpon>
+    </Content>
+    <Content Include="img\ImgOffres\ain_drahem.jpg" />
+    <Content Include="img\ImgOffres\bizerte.jpg" />
+    <Content Include="img\ImgOffres\hammamet.jpg" />
+    <Content Include="img\ImgOffres\Hawai.jpg" />
+    <Content Include="img\ImgOffres\jerba.jpg" />
+    <Content Include="img\ImgOffres\mednine.png" />
+    <Content Include="img\resultat.png" />
+    <Content Include="Resultat.Master" />
+    <Content Include="Resultat.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\AjouterOffre.aspx" />
+    <Content Include="Admin\Administration.aspx" />
+    <Content Include="img\tableaudebord.png" />
+    <Content Include="img\taches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\GestionOffre.aspx" />
+    <Content Include="Admin\AjouterThematique.aspx" />
+    <Content Include="Admin\GestionThematique.aspx" />
+    <Content Include="img\ImgOffres\bizerte2.jpg" />
+    <Content Include="img\ImgOffres\cMedt.jpg" />
+    <Content Include="img\ImgOffres\Desert.jpg" />
+    <Content Include="img\ImgOffres\Gizah7.jpg" />
+    <Content Include="img\ImgOffres\KELIBIA.JPG" />
+    <Content Include="img\ImgOffres\Koala.jpg" />
+    <Content Include="img\ImgOffres\Paris2.jpg" />
+    <Content Include="img\ImgOffres\Pariss.jpg" />
+    <Content Include="img\ImgOffres\SudTunisien.jpg" />
+    <Content Include="img\promo.png" />
+    <Content Include="js\modernizr.custom.67689.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\nosoffres.png" />
+    <Content Include="Promotions.Master" />
+    <Content Include="Promotions.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AnnulerPromotion.aspx" />
+    <Content Include="Admin\CreerPromotion.aspx" />
+    <Content Include="Admin\AttribuerPromotion.aspx" />
+    <Content Include="Admin\OffreFavories.aspx" />
+    <Content Include="DetailPromotion.Master" />
+    <Content Include="img\detailspromotion.png" />
+    <Content Include="DetailPromotion.aspx" />
+    <Content Include="img\menu.png" />
+    <Content Include="Users\OffresFavoris.aspx" />
+    <Content Include="Users\supprimer.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Orange\Orange.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Bleu\Bleu.skin" />
+    <Content Include="Users\AppliquerTheme.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Users\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49492</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

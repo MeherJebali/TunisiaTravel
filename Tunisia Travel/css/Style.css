@@ -1,0 +1,340 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#fff;
+	}
+table
+{
+	border-collapse:collapse;
+}
+	
+a:link,a:visited{
+				color:#15337d;
+				text-decoration:none;
+				}
+a:hover{
+		color:orange;
+		text-decoration:underline;
+		}
+a:active{
+		color:#15337d;
+		}
+p
+{
+	font-family:@Arial Unicode MS;
+	font-size:large;
+	text-decoration:none;
+	color:Black;
+	}
+	
+#conteneur{
+	padding-top:3px;
+	width:100%;
+	margin:0 auto;
+	background-image: url(../img/back.jpg);
+	background-repeat: no-repeat;
+	}
+	
+#header{
+	padding-top:3px;
+	margin-bottom:15px;
+	width:100%;
+	height:110px;
+	background-image: url(../img/header.gif);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+
+#logo {
+	margin-top:20px;
+	margin-left:132px;
+	height:90px;
+	width:270px;
+	}	
+
+#user{
+	margin-left:930px;
+	margin-top:-110px;
+	width:300px;
+	height:120px;
+	}
+	
+#menu{
+	margin-bottom:10px;
+	width:100%;
+	height:67px;
+	background-image: url(../img/back_liens.gif);
+	background-repeat: repeat;
+	margin:0 auto;
+	text-align:center;
+	}
+	
+		
+	
+#recherche{
+	margin-top:30px;
+	padding-top:40px;
+	margin-bottom:15px;
+	margin-left:130px;
+	float:left;
+	width:331px;
+	height:320px;
+	border-radius:10px;
+	background-image: url(../img/recherche.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+
+#promo{
+	margin-top:30px;
+	margin-bottom:15px;
+	margin-left:490px;
+	width:740px;
+	height:360px;
+	border-radius:10px;
+	background-image: url(../img/promotions.png);
+	background-repeat: no-repeat;
+
+	}	
+
+#PromoContent
+{
+	padding-top:40px;
+	height:320px;
+	width:740px;
+}	
+.slideshow {  
+   width:100%;
+   height: 320px;  
+   overflow: hidden;  
+	}  
+
+.slideshow ul {  
+   width: 500%;  
+   height: 200px;  
+   padding:0; margin:0;  
+   list-style: none;  
+	}  
+.slideshow li {  
+   float: left;  
+	} 	
+
+#topoffre{
+	margin-bottom:15px;
+	padding-top:60px;
+	margin-left:130px;
+	float:left;
+	width:331px;
+	height:930px;
+	border-radius:10px;
+	background-image: url(../img/topOffre.png);
+	background-repeat: no-repeat;
+	background-color:#f6f6f6;
+	}
+
+#offres
+{
+	margin-bottom:15px;
+	padding-top:60px;
+	width:740px;
+	margin-left:490px;
+	height:930px;
+	border-radius:10px;
+	background-image: url(../img/offres.png);
+	background-repeat: no-repeat;
+	background-color:#f6f6f6;
+	}
+
+#quiSommesNous
+{
+	margin-top:15px;
+	padding-top:120px;
+	margin-bottom:15px;
+	width:1102px;
+	margin-left:130px;
+	height:350px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/quisommesnous.png);
+	background-repeat: no-repeat;
+	
+}
+#Contact
+{
+	margin-top:15px;
+	padding-top:120px;
+	margin-bottom:15px;
+	width:1102px;
+	margin-left:130px;
+	height:350px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/contacteznous.png);
+	background-repeat: no-repeat;
+	}	
+#Inscription
+{
+	margin-top:15px;
+	padding-top:120px;
+	margin-bottom:15px;
+	width:1102px;
+	margin-left:130px;
+	height:350px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/inscription.png);
+	background-repeat: no-repeat;
+}	
+#DetailOffre
+{
+	margin-top:15px;
+	padding-top:50px;
+	padding-left:70px;
+	margin-bottom:15px;
+	width:1032px;
+	margin-left:130px;
+	height:750px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/detailsoffre.png);
+	background-repeat: no-repeat;
+}
+#DetailPromo
+{
+	margin-top:15px;
+	padding-top:50px;
+	padding-left:70px;
+	margin-bottom:15px;
+	width:1032px;
+	margin-left:130px;
+	height:750px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/detailspromotion.png);
+	background-repeat: no-repeat;
+	}
+#Sejours
+{
+	margin-top:15px;
+	padding-top:50px;
+	padding-left:70px;
+	margin-bottom:15px;
+	width:1032px;
+	margin-left:130px;
+	height:750px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/sejoursentunisie.png);
+	background-repeat: no-repeat;
+}
+
+#Voyages
+{
+	margin-top:15px;
+	padding-top:50px;
+	padding-left:70px;
+	margin-bottom:15px;
+	width:1032px;
+	margin-left:130px;
+	height:750px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/voyageetranger.png);
+	background-repeat: no-repeat;
+}
+
+#Promotions
+{
+	margin-top:15px;
+	padding-top:50px;
+	padding-left:70px;
+	margin-bottom:15px;
+	width:1032px;
+	margin-left:130px;
+	height:750px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/nosoffres.png);
+	background-repeat: no-repeat;
+	}
+
+#RsltSearch
+{
+	margin-top:15px;
+	padding-top:50px;
+	padding-left:70px;
+	margin-bottom:15px;
+	width:1032px;
+	margin-left:130px;
+	height:750px;
+	border-radius:10px;
+	background-color:#f6f6f6;
+	background-image: url(../img/resultat.png);
+	background-repeat: no-repeat;
+}
+
+#infoPr
+{
+	margin-bottom:15px;
+	margin-left:130px;
+	float:left;
+	width:331px;
+	height:600px;
+	border-radius:10px;
+	background-image: url(../img/menu.png);
+	background-repeat: no-repeat;
+	padding-top:40px;
+	background-color:#f6f6f6;
+}
+
+#Gestion
+{
+	margin-bottom:15px;
+	margin-left:130px;
+	float:left;
+	width:331px;
+	height:600px;
+	border-radius:10px;
+	background-image: url(../img/taches.png);
+	background-repeat: no-repeat;
+	padding-top:40px;
+	background-color:#f6f6f6;
+	}
+
+#offresPrf
+{
+	margin-bottom:15px;
+	padding-top:40px;
+	width:740px;
+	margin-left:490px;
+	height:600px;
+	border-radius:10px;
+	background-image: url(../img/tableaudebord.png);
+	background-repeat: no-repeat;
+	background-color:#f6f6f6;
+}
+
+#details
+{
+	margin-bottom:15px;
+	padding-top:40px;
+	width:740px;
+	margin-left:490px;
+	height:600px;
+	border-radius:10px;
+	background-image: url(../img/tableaudebord.png);
+	background-repeat: no-repeat;
+	background-color:#f6f6f6;
+	}
+
+#footer{
+	
+	padding-top:15px;
+	width:100%;
+	height:130px;
+	background-color:#f2951a;
+	}
+ul
+{
+	list-style-type:none;
+	}

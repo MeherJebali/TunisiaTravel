@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Resultat.master.cs" Inherits="Tunisia_Travel.Resultat" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>TunisiTravel-Résultat de Recherche</title>
+    <link rel="StyleSheet" type="text/css" href="css/Style.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+			<div id="logo">
+				<a href="Accueil.aspx"><img src="img/Logo.png" width="270" height="90"></a>
+			</div>
+			<div id="user">
+                <asp:ContentPlaceHolder ID="connexion" runat="server">
+                </asp:ContentPlaceHolder>
+			</div>
+		</div>
+		<div id="menu">
+			<a href="Accueil.aspx"><img src="img/accueil.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="SejoursTn.aspx"><img src="img/sejours.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="Voyages.aspx"><img src="img/voyages.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="Promotions.aspx"><img src="img/promo.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="QuiSommesNous.aspx#qui"><img src="img/apropos.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="Contact.aspx#cnct"><img src="img/contact.png"/></a>
+		</div>
+        <div id="RsltSearch">
+            <asp:ContentPlaceHolder ID="Reslt" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+			   <center>
+			        <p><b>Adresse: 47, Rue des Entrepreneurs Charguia II 2035- Tunis Carthage (Tunisie)                        <br />
+                        Tél : (+216) 71 940 322 / 71 940292<br />
+                        Fax : (+216) 71 940 370<br />
+                        Site Officiel: <a href="#">www.tt.com.tn</a><br />
+                         Tunisia Travel - Tous droits réservés ® 2013 
+                    </b></p>
+			    </center>
+			</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Promotions.master.cs" Inherits="Tunisia_Travel.Promotions" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>TunisiTravel-Les Promotions</title>
+    <link rel="StyleSheet" type="text/css" href="css/Style.css"/>
+	<script type="text/javascript" src="js/jQuery.js"></script>  
+	<script type="text/javascript" src="js/modernizr.custom.67689.js"></script> 
+	<script type="text/javascript">  
+		   $(function(){
+		   setInterval(function()
+			  {
+			      $(".slideshow ul").animate({ marginLeft: -860 }, 1000, function()
+				 {  
+					$(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));  
+				 })  
+			  }, 3800);  
+		   });  
+	</script>  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header">
+			<div id="logo">
+				<a href="Accueil.aspx"><img src="img/Logo.png" width="270" height="90"></a>
+			</div>
+			<div id="user">
+                <asp:ContentPlaceHolder ID="connexion" runat="server">
+                </asp:ContentPlaceHolder>
+			</div>
+		</div>
+		<div id="menu">
+			<a href="Accueil.aspx"><img src="img/accueil.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="SejoursTn.aspx"><img src="img/sejours.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="Voyages.aspx"><img src="img/voyages.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="Promotions.aspx"><img src="img/promo.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="QuiSommesNous.aspx#qui"><img src="img/apropos.png"/></a>
+			<img src="img/separateur.png"/>
+			<a href="Contact.aspx#cnct"><img src="img/contact.png"/></a>
+		</div>
+		<div id="conteneur">	
+			<div id="recherche">
+                <asp:ContentPlaceHolder ID="Recherche" runat="server">
+                </asp:ContentPlaceHolder>
+			</div>
+			<div id="promo">
+			    <div id="PromoContent">
+				    <div class="slideshow">
+					    <ul>  
+						    <li><img src="img/1.jpg" alt="" width="860" height="320" /></li>  
+						    <li><img src="img/2.jpg" alt="" width="860" height="320" /></li>  
+						    <li><img src="img/3.jpg" alt="" width="860" height="320" /></li>  
+						    <li><img src="img/4.jpg" alt="" width="860" height="320" /></li>  
+					    </ul>  
+				    </div>
+				</div>
+			</div>
+			<div id="Promotions">
+			    <asp:ContentPlaceHolder ID="promos" runat="server"></asp:ContentPlaceHolder>
+			</div>
+			<div id="footer">
+			<center>
+			        <p><b>Adresse: 47, Rue des Entrepreneurs Charguia II 2035- Tunis Carthage (Tunisie)                        <br />
+                        Tél : (+216) 71 940 322 / 71 940292<br />
+                        Fax : (+216) 71 940 370<br />
+                        Site Officiel: <a href="#">www.tt.com.tn</a><br />
+                         Tunisia Travel - Tous droits réservés ® 2013 
+                    </b></p>
+			    </center>
+			</div>
+		</div>
+    </div>
+    </form>
+</body>
+</html>
